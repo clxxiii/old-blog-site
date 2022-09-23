@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.88926,0,0,0.890909,7.0876,6.98182)">
+        <clipPath id="_clip1">
+            <path d="M128,32C128,14.339 121.238,0 112.91,0L15.09,0C6.762,0 0,14.339 0,32L0,96C0,113.661 6.762,128 15.09,128L112.91,128C121.238,128 128,113.661 128,96L128,32Z"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(0.529309,-0,-0,1.12245,-3.75153,-7.83673)">
+                <use xlink:href="#_Image2" x="7.093" y="7.041" width="241.825px" height="114.036px" transform="matrix(0.999276,0,0,0.991621,0,0)"/>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(11.8964,0,0,11.8964,-517.055,-575.848)">
+        <text x="45.181px" y="57.547px" style="font-family:'ScoutCond-Bold', 'ScoutCond';font-weight:700;font-size:12px;fill:white;">BL<tspan x="53.569px " y="57.547px ">O</tspan>G</text>
+    </g>
+    <defs>
+        <image id="_Image2" width="242px" height="115px" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABzAPIDAREAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEEB//EABkQAQEBAQEBAAAAAAAAAAAAAAARASExcf/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgYDCP/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A6K7t8ogAACUSpRGaCUgzVKzRKlBKDNBmrEqVUZoJQZoJRKzQSrEZoJQrNEqUGaCVYM1UqUIzuipRodQ8QBKJUojNBmrBKFZolSgzQSgzViVKqM0EoM0EolZpBKqM0EoVmiJQZoJVgzVRndCJugzQrNESjU6uvFKzREoM1YJQrNEqUGaCUGasSpVRmglBmglErNIJVRmglCs0RmglBKsGaqM7oRmhU3QrNESgzQSjQ6uvEZqwZoVKIlBmgzREqwrNVEoJQZoM0SpSIzVEoM0KlEZoJQZqwSqnWaEZoVmhUojNBKDNCpViVKRpdVXiVKIzQSgzREqwrNVEoM0EoM0SpViM0EoM0KlEZoJVGaQSqnWaDO6FZoiUGaCUGaFSrEZoJVEo0OqrwEoM0RKsKzVRKDNBKDNErNWIlBKDNCs0RKCVRmkSs1TqUGd0KzREoM0EoM0SpVgzQSqM0RKFZo0urrxRmkKlVEoM0GaFSiVmrESgzQSiVmglBmqJSJWaom6DO6FZojNBKCUGaJWasEqjNBKIzQqURmkEqxorq68RmglBmhUolZqxEoM0EolZoJQZqiUiVmqM7orO6JUojNBKDNBKJWasEqjNBKJWaJUoM0glUZoVKNDq68RmiVKDNWIlBmhUolZoM0EqiVYlZ3QZ3RfGd0SpRGaCUGaCUSs1YM1RKCUSs0Ss0EpBKozRKzQSiJRprqq8RKsRKDNCs0SpQZoJVGaqVN0IzugzuhWaIlBKDNBmiVKsGaolBmiVKIzQSkGaolErNBKIzQShUqxodVXiJQrNESgzQSrBmqnxN0IzugzuhWaIlBmglCs0SpVgzVEoM0SpRGaCVYM0EolZoiUGaCUKzViJVGaNNdXXgjNBKCVYM1UZ3QiboVmhWaIlBmglCs1YlSgzVEoM0SpRGaDNWCUEolZojNBKDNUqUiM1RKDNBKNDq68BmrBKqM7oRndCpQrNESgzQShWasRmglUSgzRKzREoM1YJQZolSiM0EoM1SpRGaolBmglErNEBqdVXkjO6EZoVmglEZoJQZoVKsRmglUZoiUKzREoM1RKFZolSiM0EoM1YVKIzVEoM0EolZogAANOOn15KyJrIiAmgzoM6ImqM6omgzompojIIuDIIJrIiAyCBrOriJqjOgmgzompoiAAAAD//2Q=="/>
+    </defs>
+</svg>

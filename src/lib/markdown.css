@@ -1,0 +1,111 @@
+:root {
+    --heading-color: rgb(213, 255, 238);
+    --heading-glow: rgb(122, 255, 177);
+    --bold-color: rgb(200, 255, 223);
+    --link-color: rgb(200, 255, 223);
+    --link-color-hover: rgb(144, 255, 190);
+}
+
+.content * {
+    max-width: 100%;
+}
+
+code {
+    position: relative;
+    font-size: 90%;
+    margin-left: 0 !important;
+    vertical-align: middle;
+    transform: translate(10px, 20px);
+    padding: 0px 3px;
+    border-radius: 5px;
+    background-color: var(--bg1);
+    list-style-type: none;
+}
+
+ul.code {
+    padding: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.size {
+    font-size: calc(100% * var(--i));
+}
+
+ul {
+    width: 90%;
+}
+
+table,
+th,
+td {
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+}
+
+th {
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+td {
+    font-size: 18px;
+    padding: 5px 5px 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255);
+}
+
+hr {
+    border: 1px solid var(--bg1);
+    width: 95%;
+}
+
+table {
+    padding: 10px;
+    border-radius: 10px;
+    border-spacing: 0 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg,
+            rgba(19, 212, 213, 0.5) 0%,
+            rgba(23, 214, 166, 0.5) 100%);
+    width: 90%;
+}
+
+pre,
+code {
+    font-family: "Fira Code", monospace;
+}
+
+pre {
+    background-color: #1d262f;
+    color: #81b4db;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+pre>code {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+table code {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+blockquote {
+    position: relative;
+}
+
+blockquote::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    height: 100%;
+    background-color: var(--bg1);
+    border-radius: 5px;
+    width: 4px;
+}
