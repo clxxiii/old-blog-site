@@ -1,8 +1,6 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { getMetadata } from '$lib/getMetadataOfMD';
 
-export const prerender = true;
-
 /** @type {import("@sveltejs/kit").Load} */
 export async function load({ url }) {
   let page = parseInt(url.searchParams.get('page') || '1');
