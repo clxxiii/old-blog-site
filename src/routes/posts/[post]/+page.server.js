@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { getMetadata } from '$lib/getMetadataOfMD';
-import { Converter } from 'showdown';
+import showdown from 'showdown';
+const { Converter } = showdown;
 
 export const prerender = false;
 export const csr = true;
