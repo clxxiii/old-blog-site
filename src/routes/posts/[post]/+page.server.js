@@ -1,4 +1,3 @@
-import { readdirSync, readFileSync } from 'node:fs';
 import { getMetadata } from '$lib/getMetadataOfMD';
 import showdown from 'showdown';
 const { Converter } = showdown;
@@ -9,17 +8,18 @@ const converter = new Converter({ tables: true, metadata: true });
 
 /** @type {import("@sveltejs/kit").Load} */
 export async function load({ params }) {
-  let postList = readdirSync('./static/articles').filter((x) => x.endsWith('.md'));
-  let posts = [];
+  let postList = import.meta.glob('../../../../static/articles/*.md', { as: 'raw' });
 
-  for (const postName of postList) {
-    let page = readFileSync(`./static/articles/${postName}`).toString();
-    let data = getMetadata(page, postName);
+  let posts = [];
+  for (const path in postList) {
+    let article = await postList[path]();
+    let data = getMetadata(article);
+    data.page = article;
     posts.push(data);
   }
-  let post = posts.find((x) => x.minTitle == params.post);
-  let contentMD = readFileSync(`./static/articles/${post.path}`).toString();
-  let content = converter.makeHtml(contentMD);
 
-  return { post, content };
+  let post = posts.find((x) => x.minTitle == params.post);
+  let page = converter.makeHtml(post.page);
+
+  return { post, page };
 }

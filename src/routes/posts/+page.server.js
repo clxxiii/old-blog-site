@@ -1,16 +1,16 @@
-import { readdirSync, readFileSync } from 'node:fs';
 import { getMetadata } from '$lib/getMetadataOfMD';
 
 /** @type {import("@sveltejs/kit").Load} */
 export async function load({ url }) {
   let page = parseInt(url.searchParams.get('page') || '1');
 
-  let postList = readdirSync('./static/articles').filter((x) => x.endsWith('.md'));
-  let posts = [];
+  let postList = import.meta.glob('../../../static/articles/*.md', { as: 'raw' });
+  console.log(postList);
 
-  for (const postName of postList) {
-    let page = readFileSync(`./static/articles/${postName}`).toString();
-    posts.push(getMetadata(page, postName));
+  let posts = [];
+  for (const path in postList) {
+    let article = await postList[path]();
+    posts.push(getMetadata(article));
   }
 
   // Sort articles

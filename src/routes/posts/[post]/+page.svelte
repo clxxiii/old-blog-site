@@ -3,7 +3,7 @@
   import '$lib/tag-colors.css';
   import '$lib/markdown.css';
 
-  let { post, content } = data;
+  let { post, page } = data;
   let { title, publishDate, tags } = post;
 
   let format = { month: 'short', day: 'numeric', year: 'numeric' };
@@ -27,7 +27,7 @@
 </div>
 <div class="hr" />
 <div class="content">
-  {@html content}
+  {@html page}
 </div>
 
 <style>
