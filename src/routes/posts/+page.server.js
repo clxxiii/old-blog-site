@@ -4,7 +4,7 @@ import { getMetadata } from '$lib/getMetadataOfMD';
 export async function load({ url }) {
   let page = parseInt(url.searchParams.get('page') || '1');
 
-  let postList = import.meta.glob('../../../static/articles/*.md', { as: 'raw' });
+  let postList = import.meta.glob('$lib/articles/*.md', { as: 'raw' });
   console.log(postList);
 
   let posts = [];

@@ -8,7 +8,7 @@ const converter = new Converter({ tables: true, metadata: true });
 
 /** @type {import("@sveltejs/kit").Load} */
 export async function load({ params }) {
-  let postList = import.meta.glob('../../../../static/articles/*.md', { as: 'raw' });
+  let postList = import.meta.glob('$lib/articles/*.md', { as: 'raw' });
 
   let posts = [];
   for (const path in postList) {
