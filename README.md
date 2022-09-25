@@ -1,9 +1,3 @@
----
-title: Dev instructions
-description: the readme for the project
-publishDate: 0
----
-
 # SvelteKit
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), deployed to [Vercel](https://vercel.com).
@@ -23,7 +17,10 @@ pnpm run dev
 
 # or start the server and open the app in a new browser tab
 pnpm run dev -- --open
+
 ```
+
+If you're adding new articles, you have to run `pnpm run refresh` before every push (I wish I didn't have to do this but I do)
 
 ## Building
 

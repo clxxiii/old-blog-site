@@ -1,4 +1,9 @@
 <script>
+  import banner from '../assets/static banner.png';
+  import '$lib/markdown.css';
+
+  export let data;
+  let { page } = data;
 </script>
 
 <svelte:head>
@@ -8,13 +13,12 @@
 
 <section>
   <h1>
-    <span class="welcome">
-      <picture>
-        <source srcset="svelte-welcome.webp" type="image/webp" />
-        <img src="svelte-welcome.png" alt="Welcome" />
-      </picture>
-    </span>
+    <img src={banner} alt="" />
   </h1>
+  <hr />
+  <article class="content">
+    {@html page}
+  </article>
 </section>
 
 <style>
@@ -30,16 +34,7 @@
     width: 100%;
   }
 
-  .welcome {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding: 0 0 calc(100% * 495 / 2048) 0;
-  }
-
-  .welcome img {
-    position: absolute;
+  img {
     width: 100%;
     height: 100%;
     top: 0;

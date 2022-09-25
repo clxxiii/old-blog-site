@@ -26,9 +26,9 @@
   </div>
 </div>
 <div class="hr" />
-<div class="content">
+<article class="content">
   {@html page}
-</div>
+</article>
 
 <style>
   .title {

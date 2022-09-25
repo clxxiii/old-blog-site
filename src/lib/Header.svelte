@@ -25,7 +25,7 @@
     display: flex;
     width: 100%;
     height: 100px;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .corner {
@@ -40,18 +40,46 @@
   }
   ul {
     position: relative;
-    padding: 0;
-    margin: 0;
-    height: 3em;
+    padding: 10px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-family: 'Megrim';
+    font-family: 'Fredoka One';
+    font-size: 1.5em;
     font-weight: bold;
     align-items: center;
     list-style: none;
     background: var(--background);
     background-size: contain;
+  }
+
+  ul a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  ul li {
+    margin-left: 70px;
+    text-align: center;
+    width: 100px;
+  }
+
+  ul li:hover::after {
+    left: -5%;
+    width: 110%;
+  }
+
+  ul li:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 5px;
+    border-radius: 5px;
+    background-color: var(--light-text-color);
+    height: 5px;
+    transition: 0.4s;
   }
   li {
     position: relative;
