@@ -2,7 +2,7 @@ import showdown from 'showdown';
 const { Converter } = showdown;
 import posts from '$lib/articles.json';
 
-export const prerender = true;
+export const prerender = false;
 export const csr = true;
 const converter = new Converter({ tables: true, metadata: true });
 
