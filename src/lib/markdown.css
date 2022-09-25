@@ -1,11 +1,3 @@
-:root {
-    --heading-color: rgb(213, 255, 238);
-    --heading-glow: rgb(122, 255, 177);
-    --bold-color: rgb(200, 255, 223);
-    --link-color: rgb(200, 255, 223);
-    --link-color-hover: rgb(144, 255, 190);
-}
-
 .content * {
     max-width: 100%;
 }
@@ -20,6 +12,20 @@ code {
     border-radius: 5px;
     background-color: var(--bg1);
     list-style-type: none;
+}
+
+a {
+    position: relative;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+a::after {
+    content: "";
 }
 
 ul.code {

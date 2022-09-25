@@ -28,8 +28,8 @@
   src: url("/fonts/FiraCode-VF.ttf");
 }
 
-:root {
-  font-family: 'Poppins';
+
+body {
   --heading-font: 'Poiret One';
   --bg1: #dfdfdf;
   --bg2: #ffffff;
@@ -37,11 +37,26 @@
   --accent-color: #06e8f8;
   --heading-color: rgba(0, 0, 0, 0.7);
   --text-color: black;
-  --light-text-color: #666666
-}
-
-body {
+  --light-text-color: #666666;
+  --link-color: rgb(72, 217, 236);
+  --link-color-hover: rgb(43, 161, 177);
+  font-family: 'Poppins';
   min-height: 100vh;
   margin: 0;
   background: var(--bg1);
+  transition: .4s;
+  color: var(--text-color)
+}
+
+body.darkmode {
+  --heading-font: 'Poiret One';
+  --bg1: #111111;
+  --bg2: #222222;
+  --bg3: #333333;
+  --accent-color: #06e8f8;
+  --heading-color: rgba(255, 255, 255, 0.7);
+  --text-color: white;
+  --light-text-color: #aaaaaa;
+  --link-color: rgb(72, 217, 236);
+  --link-color-hover: rgb(43, 161, 177);
 }

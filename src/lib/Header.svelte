@@ -1,6 +1,33 @@
 <script>
   import { page } from '$app/stores';
+  import ToggleSwitch from './ToggleSwitch.svelte';
   import logo from '../assets/blog-icon.svg';
+  import { browser } from '$app/environment';
+  import { onMount } from 'svelte';
+
+  let toggle;
+  const switchTheme = (ev) => {
+    let { detail: checked } = ev;
+
+    if (browser) {
+      if (checked) {
+        document.body.classList.add('darkmode');
+        document.cookie = 'darkmode=true';
+      } else {
+        document.body.classList.remove('darkmode');
+        document.cookie = 'darkmode=false';
+      }
+    }
+  };
+
+  onMount(() => {
+    if (browser) {
+      if (document.cookie == 'darkmode=true') {
+        document.body.classList.add('darkmode');
+        toggle.setChecked(true);
+      }
+    }
+  });
 </script>
 
 <header>
@@ -18,6 +45,9 @@
       </li>
     </ul>
   </nav>
+  <div class="switch">
+    <ToggleSwitch on:check={switchTheme} bind:this={toggle} />
+  </div>
 </header>
 
 <style>
@@ -84,5 +114,10 @@
   li {
     position: relative;
     height: 100%;
+  }
+
+  .switch {
+    margin: 10px;
+    padding: 10px;
   }
 </style>
