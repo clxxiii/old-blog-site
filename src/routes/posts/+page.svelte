@@ -1,8 +1,6 @@
 <script>
   import Post from '$lib/PostCard.svelte';
-  export let data;
-
-  let { posts } = data;
+  import posts from '$lib/articles.json';
 </script>
 
 <svelte:head>

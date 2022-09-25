@@ -5,6 +5,7 @@
     "build": "vite build",
     "package": "svelte-kit package",
     "preview": "vite preview",
+    "refresh": "node ./src/refresh.js",
     "check": "svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
     "lint": "prettier --check .",
