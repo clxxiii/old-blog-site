@@ -25,7 +25,7 @@ writeFileSync('./src/lib/articles.json', JSON.stringify(posts));
 function getMetadata(file, name) {
   let validKeys = ['title', 'publishDate', 'description', 'tags'];
 
-  let lines = file.split('\r\n');
+  let lines = file.split('\n');
   let reading = true;
   let error = false;
   let metadata = {};
@@ -33,7 +33,7 @@ function getMetadata(file, name) {
   for (let num = 0; num < lines.length && reading; num++) {
     let line = lines[num];
 
-    if (num == 0 && !line.includes('---')) {
+    if (num == 0 && !line.startsWith('---')) {
       console.log(`
           Error when reading ${name}
 
@@ -43,13 +43,14 @@ function getMetadata(file, name) {
       error = true;
       continue;
     }
+
     // Skip first line
     if (num == 0) {
       continue;
     }
 
     // Stop reading after end of metadata
-    if (num != 0 && line == '---') {
+    if (num != 0 && line.startsWith('---')) {
       reading = false;
       continue;
     }
